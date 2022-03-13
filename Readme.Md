@@ -8,7 +8,12 @@ of FANG organizations and stock prices that people bid at. A Random number gener
 and the Time in ISO format will be used.
 
 
-First and foremost, we will create our Kafka producer.
+# First and foremost, we will create our Kafka producer.
+
+The Kafka Producer is called "KafkaProducerApplication". This shows code Produces a JSON Formatted message when a random UUID as the
+key and the values will show a bid of a stock price, time of trade and the stock symbol name.
+
+A basic Kafka Producer with the Metadata Callback Method just for fun called "KafkaProducer"
 
 
 # To see the data via our CLI, please download the Kafka Binaries
