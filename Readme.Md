@@ -20,13 +20,13 @@ B. Introduction to the Data Mesh
 
 # Technologies used in this Demo
 
-A. The Aiven Console
-B. Kafka Producer
-C. Telegraf as our Kafka Consumer
-D. InfluxDB + Grafana
-E. Kafka Streams and the Aiven Schema Registry
-F. Kafka Connect
-G. OpenSearch (Elasticsearch Alternative)
+A. The Aiven Console <br />
+B. Kafka Producer <br />
+C. Telegraf as our Kafka Consumer <br />
+D. InfluxDB + Grafana <br />
+E. Kafka Streams and the Aiven Schema Registry <br />
+F. Kafka Connect <br />
+G. OpenSearch (Elasticsearch Alternative) <br />
 
 
 
