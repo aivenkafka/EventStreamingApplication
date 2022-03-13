@@ -1,3 +1,5 @@
+# Introduction
+
 Hi! Welcome to my an application that will show how Aiven can assist your organization on how
 to deploy your Data Mesh!
 

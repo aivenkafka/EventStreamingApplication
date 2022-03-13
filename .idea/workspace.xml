@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KafkaProducerApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KafkaProducerApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-380">
@@ -21,15 +21,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -178,13 +169,7 @@
             <path>
               <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaStreamsJsonToAvro">
+  <component name="RunManager" selected="Application.KafkaProducerApplication">
     <configuration name="KafkaProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KafkaClients.KafkaProducer" />
       <module name="EventStreamingApplication" />
@@ -298,8 +283,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KafkaStreamsJsonToAvro" />
         <item itemvalue="Application.KafkaProducerApplication" />
+        <item itemvalue="Application.KafkaStreamsJsonToAvro" />
         <item itemvalue="Application.KafkaProducer" />
       </list>
     </recent_temporary>
@@ -717,6 +702,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-380">
@@ -724,13 +716,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
