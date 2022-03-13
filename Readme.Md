@@ -15,7 +15,7 @@ A. Basic knowledge of Apache Kafka is recommended. For more information on Kafka
 
 B. Introduction to the Data Mesh
 
-<a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is Data Mesh</a>
+<a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is a Data Mesh</a>
 
 # First and foremost, we will create our Kafka producer.
 
