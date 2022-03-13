@@ -17,6 +17,19 @@ B. Introduction to the Data Mesh
 
 <a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is a Data Mesh</a>
 
+
+# Technologies used in this Demo
+
+A. The Aiven Console
+B. Kafka Producer
+C. Telegraf as our Kafka Consumer
+D. InfluxDB + Grafana
+E. Kafka Streams and the Aiven Schema Registry
+F. Kafka Connect
+G. OpenSearch (Elasticsearch Alternative)
+
+
+
 # First and foremost, we will create our Kafka producer.
 
 The Kafka Producer is called "KafkaProducerApplication". This shows code Produces a JSON Formatted message when a random UUID as the
