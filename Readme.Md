@@ -11,6 +11,10 @@ Upon sending the data into Kafka, different applications will use the data for d
 scalability. Apache Kafka will act as our Central Nervous System of Big Data so applications can react and respond
 with little to no latency.
 
+# High Level Overview of the Data Mesh using Aiven
+
+![Alt text](./images/Data_Mesh.png?raw=true "Building the Data Mesh with Aiven")
+
 # Pre-requisites before the Demo
 
 A. Basic knowledge of Apache Kafka is recommended. For more information on Kafka please check the url below
@@ -26,10 +30,6 @@ B. Introduction to the Data Mesh
 
 <a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is a Data Mesh</a>
 
-C. A positive attitude!
-
-![Alt text](./images/Data_Mesh.png?raw=true "Building the Data Mesh with Aiven")
-
 # Technologies used in this Demo
 
 A. The Aiven Console <br />
@@ -39,7 +39,6 @@ D. InfluxDB + Grafana <br />
 E. Kafka Streams and the Aiven Schema Registry <br />
 F. Kafka Connect <br />
 G. OpenSearch (Elasticsearch Alternative) <br />
-
 
 
 # First and foremost, we will create our Kafka producer.
