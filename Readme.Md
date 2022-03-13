@@ -17,6 +17,7 @@ B. Introduction to the Data Mesh
 
 <a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is a Data Mesh</a>
 
+C. A positive attitude!
 
 # Technologies used in this Demo
 
