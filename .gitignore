@@ -1,7 +1,8 @@
-./src/main/resources/ca.pem
-./src/main/resources/client.keystore.p12
-./src/main/resources/client.truststore.jks
-./src/main/resources/service.cert
-./src/main/resources/service.key
-./src/main/resources/client-ssl.properties
-./src/main/resources/streams-application-aiven.properties
+/src/main/resources/ca.pem
+/src/main/resources/client.keystore.p12
+/src/main/resources/client.truststore.jks
+/src/main/resources/service.cert
+/src/main/resources/service.key
+/src/main/resources/client-ssl.properties
+/src/main/resources/streams-application-aiven.properties
+/src/main/target/**
