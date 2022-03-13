@@ -7,6 +7,11 @@ In our Application today, we will create a random Datagen Producer that will sen
 of FANG organizations and stock prices that people bid at. A Random number generator, stock symbol
 and the Time in ISO format will be used.
 
+# Pre-requisites before the Demo
+
+Basic knowledge of Apache Kafka is recommended. For more information on Kafka please check the url below
+
+<a href="https://kafka.apache.org/" target="_blank">Kafka</a>
 
 # First and foremost, we will create our Kafka producer.
 
@@ -16,8 +21,6 @@ key and the values will show a bid of a stock price, time of trade and the stock
 A basic Kafka Producer with the Metadata Callback Method just for fun called "KafkaProducer"
 
 
-
-
 # Optional: Modifying your Path
 To see the data via our CLI, please download the Kafka Binaries
 Place it in my path so I do can execute these commands everywhere in your CLI. This makes life easier!
@@ -25,7 +28,7 @@ Place it in my path so I do can execute these commands everywhere in your CLI. T
 export PATH=$PATH:/Users/Kevin/<kafka_binary_folder_of_choice/bin:$PATH
 
 
-# Execute our Kafka Consumer. Note how client.properties maps to our ssl certificates :)
+# Execute our Kafka Consumer. Note how client.properties maps to our ssl certificates
 
 
 kafka-console-consumer \
