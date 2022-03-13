@@ -66,8 +66,9 @@ Tip #1: By default the Consumer reads from latest. Just add --from-beginning if 
 Tip #2: You can also specify the group as well! Highly recommended. The Group ID overrides the default Consumer Setting
 
 
+# Consume data from Kafka with Telegraf
 
-# Consume data from Kafka and send to InfluxDB using the Telegraf Kafka Plugin
+Telegraf is a Kafka Consumer that will read the data from Kafka and send it to the Influx DB.
 
 telegraf -config ./src/main/resources/telegraf.conf
 
