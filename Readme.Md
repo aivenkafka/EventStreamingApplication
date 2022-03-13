@@ -11,7 +11,7 @@ and the Time in ISO format will be used.
 
 Basic knowledge of Apache Kafka is recommended. For more information on Kafka please check the url below
 
-<a href="https://kafka.apache.org/" target="_blank">Kafka</a>
+<a href="https://kafka.apache.org/" target="_blank">Kafka Introduction</a>
 
 # First and foremost, we will create our Kafka producer.
 
