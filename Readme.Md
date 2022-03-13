@@ -55,9 +55,7 @@ Place it in my path so I do can execute these commands everywhere in your CLI. T
 
 export PATH=$PATH:/Users/Kevin/<kafka_binary_folder_of_choice/bin:$PATH
 
-
-# Execute our Kafka Consumer. Note how client.properties maps to our ssl certificates
-
+Execute our Kafka Consumer. Note how client.properties maps to our ssl certificates
 
 kafka-console-consumer --topic stock-prices-topic-aiven-cloud-json --bootstrap-server kafka-interview-prep-kjang1923-2d80.aivencloud.com:17180 --property print.key=true --consumer.config <location of properties file> --group "group1"
 
