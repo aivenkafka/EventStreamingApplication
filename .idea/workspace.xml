@@ -25,8 +25,8 @@
       <file leaf-file-name="Readme.Md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme.Md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="70" column="93" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="93" />
+            <state relative-caret-position="311">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -82,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/main/avro/stocktrades.avsc" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaStreamsApplication/KafkaStreamsJsonToAvro.java" />
         <option value="$PROJECT_DIR$/src/main/resources/streams-application-aiven-git.properties" />
-        <option value="$PROJECT_DIR$/Readme.Md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Readme.Md" />
       </list>
     </option>
   </component>
@@ -126,10 +126,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="5" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="116" />
     <option name="y" value="23" />
-    <option name="width" value="1432" />
+    <option name="width" value="1280" />
     <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -320,8 +320,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="738" extended-state="6" />
-    <editor active="true" />
+    <frame x="116" y="23" width="1280" height="738" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -332,10 +331,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3294964" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.73103446" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21528861" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21528861" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21243942" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21243942" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -706,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.Md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="70" column="93" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="93" />
+        <state relative-caret-position="311">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
