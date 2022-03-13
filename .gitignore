@@ -5,4 +5,4 @@
 /src/main/resources/service.key
 /src/main/resources/client-ssl.properties
 /src/main/resources/streams-application-aiven.properties
-/src/main/target/**
+/src/main/target/
