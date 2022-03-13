@@ -28,6 +28,8 @@ B. Introduction to the Data Mesh
 
 C. A positive attitude!
 
+![Alt text](./images/Data_Mesh.png?raw=true "Building the Data Mesh with Aiven")
+
 # Technologies used in this Demo
 
 A. The Aiven Console <br />
