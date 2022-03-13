@@ -53,12 +53,7 @@ export PATH=$PATH:/Users/Kevin/<kafka_binary_folder_of_choice/bin:$PATH
 # Execute our Kafka Consumer. Note how client.properties maps to our ssl certificates
 
 
-kafka-console-consumer \
---topic stock-prices-topic-aiven-cloud-json \
---bootstrap-server kafka-interview-prep-kjang1923-2d80.aivencloud.com:17180 \
---property print.key=true \
---consumer.config client.properties \
---group "group1"
+kafka-console-consumer --topic stock-prices-topic-aiven-cloud-json --bootstrap-server kafka-interview-prep-kjang1923-2d80.aivencloud.com:17180 --property print.key=true --consumer.config <location of properties file> --group "group1"
 
 Tip #1: By default the Consumer reads from latest. Just add --from-beginning if you want to process all messages
 Tip #2: You can also specify the group as well! Highly recommended. The Group ID overrides the default Consumer Setting
@@ -68,6 +63,12 @@ Tip #2: You can also specify the group as well! Highly recommended. The Group ID
 # Consume data from Kafka and send to InfluxDB using the Telegraf Kafka Plugin
 
 telegraf -config ./src/main/resources/telegraf.conf
+
+# Monitoring and Observability
+
+Metrics of Kafka instances can be monitored in Grafana via InfluxDB. See the technical blog for details
+
+![Alt text](./images/KafkaMetrics.png?raw=true "Kafka Metrics Sample")
 
 
 
