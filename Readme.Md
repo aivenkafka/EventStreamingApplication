@@ -16,9 +16,11 @@ key and the values will show a bid of a stock price, time of trade and the stock
 A basic Kafka Producer with the Metadata Callback Method just for fun called "KafkaProducer"
 
 
-# To see the data via our CLI, please download the Kafka Binaries
 
-# Place it in my path so I do can execute these commands everywhere
+
+# Optional: Modifying your Path
+To see the data via our CLI, please download the Kafka Binaries
+Place it in my path so I do can execute these commands everywhere in your CLI. This makes life easier!
 
 export PATH=$PATH:/Users/Kevin/<kafka_binary_folder_of_choice/bin:$PATH
 
