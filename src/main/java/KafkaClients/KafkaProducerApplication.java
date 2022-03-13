@@ -61,7 +61,7 @@ public class KafkaProducerApplication {
             ObjectNode stockInformation = JsonNodeFactory.instance.objectNode();
 
             //Traded Amount each day
-            Integer traded_amount = ThreadLocalRandom.current().nextInt(0, 100);
+            Integer traded_amount = ThreadLocalRandom.current().nextInt(0, 3000);
 
             //Range of FB Stock
 
@@ -84,12 +84,12 @@ public class KafkaProducerApplication {
             while(true) {
                     int stockTickerSymbol = randomTicker.nextInt(stockSymbol.length);
                     stockInformation.put("Symbol", stockSymbol[stockTickerSymbol]);
-                    stockInformation.put("AskingPrice", "$" + traded_amount.toString());
+                    stockInformation.put("AskingPrice", traded_amount);
                     stockInformation.put("TimeOfBid", now.toString());
                     break;
                 }
 
-        return new ProducerRecord<String, String>("stock-prices-topic-json", uuidJson, stockInformation.toString());
+        return new ProducerRecord<String, String>("stock-prices-topic-aiven", uuidJson, stockInformation.toString());
         }
     }
 

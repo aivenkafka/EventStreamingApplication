@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "stock_trades",
+  "name": "fang.stock.symbols",
+  "version": "1",
+  "fields": [
+    { "name": "Symbol", "type": "string", "doc": "Stock Ticker Symbol" },
+    { "name": "AskingPrice", "type": "int", "doc": "Asking Price of the Stock in USD" },
+    { "name": "TimeOfBid", "type": "string", "doc": "Time of bid in ISO format" }
+  ]
+}
