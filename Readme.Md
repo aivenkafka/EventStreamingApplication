@@ -1,11 +1,15 @@
 # Introduction
 
 Hi! Welcome to my an application that will show how Aiven can assist your organization on how
-to deploy your Data Mesh!
+to deploy your Data Mesh using Aiven as our Provider.
 
 In our Application today, we will create a random Datagen Producer that will send a list
 of FANG organizations and stock prices that people bid at. A Random number generator, stock symbol
 and the Time in ISO format will be used.
+
+Upon sending the data into Kafka, different applications will use the data for different purposes to demonstrate
+scalability. Apache Kafka will act as our Central Nervous System of Big Data so applications can react and respond
+with little to no latency.
 
 # Pre-requisites before the Demo
 
