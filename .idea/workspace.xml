@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f07efdc-6664-4ec2-a27d-291a5973dcf0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/avro/stocktrades.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/KafkaStreamsApplication/KafkaStreamsJsonToAvro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ca.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/service.cert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/service.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/streams-application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/telegraf.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.Md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.Md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApp2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/client-ssl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/client-ssl.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KafkaClients/KafkaProducerApp2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KafkaClients/KafkaProducerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KafkaClients/KafkaProducerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client-ssl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client-ssl.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/local-settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local-settings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/streams-application-aiven-git.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,11 +45,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="streams-application-aiven.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="streams-application-aiven.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="streams-application-aiven-git.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven-git.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -119,12 +109,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/streams-application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/client-ssl.properties" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java" />
-        <option value="$PROJECT_DIR$/Readme.Md" />
         <option value="$PROJECT_DIR$/src/main/resources/telegraf.conf" />
         <option value="$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties" />
         <option value="$PROJECT_DIR$/src/main/avro/stocktrades.avsc" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaStreamsApplication/KafkaStreamsJsonToAvro.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Readme.Md" />
+        <option value="$PROJECT_DIR$/src/main/resources/streams-application-aiven-git.properties" />
       </list>
     </option>
   </component>
@@ -369,6 +360,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1626" y="40" width="1432" height="937" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -379,7 +371,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3294964" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34047619" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.65" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3904762" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.48633093" />
@@ -415,13 +407,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/client-ssl.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.Md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -729,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.Md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaStreamsApplication/KafkaStreamsJsonToAvro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -777,10 +755,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.Md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven-git.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
