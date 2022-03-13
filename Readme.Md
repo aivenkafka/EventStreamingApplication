@@ -18,7 +18,9 @@ A. Basic knowledge of Apache Kafka is recommended. For more information on Kafka
 <a href="https://kafka.apache.org/" target="_blank">Kafka Introduction</a>
 
 The Kafka binaries can be downloaded here
-<a href= "https://kafka.apache.org/downloads" target=_blank">Kafka Binaries Download</a>
+
+<a href="https://kafka.apache.org/downloads" target="_blank">Kafka Binaries</a>
+
 
 B. Introduction to the Data Mesh
 
