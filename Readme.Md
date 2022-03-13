@@ -17,6 +17,9 @@ A. Basic knowledge of Apache Kafka is recommended. For more information on Kafka
 
 <a href="https://kafka.apache.org/" target="_blank">Kafka Introduction</a>
 
+The Kafka binaries can be downloaded here
+<a href= "https://kafka.apache.org/downloads" target=_blank">Kafka Binaries Download</a>
+
 B. Introduction to the Data Mesh
 
 <a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is a Data Mesh</a>

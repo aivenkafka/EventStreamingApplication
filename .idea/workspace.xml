@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f07efdc-6664-4ec2-a27d-291a5973dcf0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/images/KafkaMetrics.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.Md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.Md" afterDir="false" />
     </list>
@@ -146,42 +147,7 @@
             <path>
               <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="avro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="KafkaClients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EventStreamingApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EventStreamingApplication" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -725,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.Md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+        <state relative-caret-position="325">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
         </state>
       </provider>
     </entry>
