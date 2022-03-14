@@ -24,30 +24,33 @@ public class KafkaStreamsJsonToAvro {
     public static void main(String[] args) throws FileNotFoundException {
         logger = Logger.getLogger(KafkaStreamsJsonToAvro.class.getName());
 
+        //Build Function to invoke Properties
         final Properties kafkaConfig = buildStreamConfiguration();
         final Properties topicConfig = buildTopicConfiguration();
 
         if (kafkaConfig == null || topicConfig == null)
             return;
-
+        //In "streams-application-aiven.properties" I have the JSON Topic listed and the Avro Topic as well
         final String jsonTopic = topicConfig.getProperty("json-topic");
         final String avroTopic = topicConfig.getProperty("avro-topic");
 
+        //I set the Object Mapper to read our JSON Data
         final ObjectMapper objectMapper = new ObjectMapper();
 
+        //A Kafka Streams building is being built to read from a JSON Topic
         StreamsBuilder builder = new StreamsBuilder();
         //Read from our JSON topic
         final KStream<String, String> jsonToAvroStream = builder.stream(
                 jsonTopic,
                 Consumed.with(Serdes.String(),
                         Serdes.String()));
-
         jsonToAvroStream.mapValues(v -> {
+            //My Avro Pojo Class I generated from the avsc file in "main" -> "avro"
             symbols stocks = null;
-
+            //I am reading the JSON Data and referencing the Properties so they can be transformed to Avro
             try {
                 final JsonNode jsonNode = objectMapper.readTree(v);
-
+                //I
                 stocks = new symbols(
                         jsonNode.get("Symbol").asText(),
                         jsonNode.get("AskingPrice").asInt(),
@@ -69,6 +72,7 @@ public class KafkaStreamsJsonToAvro {
             }
         }));
     }
+    //This is a Function to invoke the Kafka Streams Info particularly the Security configurations
 
     private static Properties buildStreamConfiguration() throws FileNotFoundException {
         logger.info("loading Kafka streams configurations");
@@ -93,6 +97,7 @@ public class KafkaStreamsJsonToAvro {
         logger.info("Loading up configs :)");
         return streamsConfiguration;
     }
+    //This is a function to load in Topic Configs.
     private static Properties buildTopicConfiguration() throws FileNotFoundException {
         logger.info ("Loading up the topic configs!");
         File configFile = new File("./src/main/resources/streams-application-aiven.properties");
