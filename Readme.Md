@@ -52,19 +52,43 @@ key and the values will show a bid of a stock price, time of trade and the stock
 
 A basic Kafka Producer with the Metadata Callback Method just for fun called "KafkaProducer"
 
-# Consume data from Kafka with Telegraf
+# Consume data from Kafka with Telegraf.
+
+<a href="https://github.com/influxdata/telegraf" target="_blank">Telegraf CLI</a>
 
 Telegraf is a Kafka Consumer that will read the data from Kafka and send it to the Influx DB.
 
+Model:
+telegraf -config <location of telegraf.conf> file
+
+Example:
 telegraf -config ./src/main/resources/telegraf.conf
 
-Tip: Change the settings in Telegraf to account for your Kafka Server Host Name and the Authentication Settings.
+Tip #1: Change the settings in Telegraf to account for your Kafka Server Host Name and the Authentication Settings.
+
+Tip #2: Note the setting with the Consumer Group. I called it "stock-bids-telegraf_metrics_consumers-readme"
+
+![Alt text](./images/telegraf_consumer.png?raw=true "Telegraf Consumer")
+
 
 # Monitoring and Observability
 
 Metrics of Kafka instances can be monitored in Grafana via InfluxDB. See the technical blog for details
 
+![Alt text](./images/01_Kafka_Metrics.png?raw=true "Step 1: Enable the Integration")
+![Alt text](./images/02_InfluxDB.png?raw=true "Step 2: Set Connectivity from InfluxDB to Grafana")
+![Alt text](./images/03_Grafana.png?raw=true "Step 3: See the Kafka Metrics in Grafana")
+
+An example of Monitoring is Consumer Groups. Since we had a telegraf Consumer send data to InfluxDB, we were able to
+process the data
+
+![Alt text](./images/telegraf_consumer.png?raw=true "Kafka Consumer Group Visual")
+
+Another example can be found here too!
 ![Alt text](./images/KafkaMetrics.png?raw=true "Kafka Metrics Sample")
+
+
+
 
 
 # Optional: Modifying your Path

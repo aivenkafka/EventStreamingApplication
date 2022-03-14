@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f07efdc-6664-4ec2-a27d-291a5973dcf0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/client.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Consumer_Group_Grafana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/telegraf_consumer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.Md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.Md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/telegraf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/telegraf.conf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,20 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KafkaProducerApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KafkaProducerApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+            <state relative-caret-position="375">
+              <caret line="89" column="75" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.Md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="telegraf.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/telegraf.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.Md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme.Md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="94">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -42,6 +51,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="70">
               <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="streams-application-aiven.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -82,16 +100,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/streams-application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/client-ssl.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/telegraf.conf" />
         <option value="$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties" />
         <option value="$PROJECT_DIR$/src/main/avro/stocktrades.avsc" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaStreamsApplication/KafkaStreamsJsonToAvro.java" />
         <option value="$PROJECT_DIR$/src/main/resources/streams-application-aiven-git.properties" />
         <option value="$PROJECT_DIR$/SSL_Setup.sh" />
         <option value="$PROJECT_DIR$/src/main/resources/client.properties" />
-        <option value="$PROJECT_DIR$/Readme.Md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/telegraf.conf" />
+        <option value="$PROJECT_DIR$/Readme.Md" />
       </list>
     </option>
   </component>
@@ -135,8 +153,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1669" />
-    <option name="y" value="150" />
+    <option name="x" value="1671" />
+    <option name="y" value="82" />
     <option name="width" value="1280" />
     <option name="height" value="738" />
   </component>
@@ -215,11 +233,11 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,7 +354,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1669" y="150" width="1280" height="738" extended-state="0" />
+    <frame x="1671" y="82" width="1280" height="738" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -348,8 +366,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3294964" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2574103" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1731493" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3447738" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17160687" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835218" />
@@ -653,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/client-ssl.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -678,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/telegraf.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SSL_Setup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -696,13 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="153" column="76" selection-start-line="153" selection-start-column="76" selection-end-line="153" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.Md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -720,10 +717,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/streams-application-aiven.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaClients/KafkaProducerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+        <state relative-caret-position="375">
+          <caret line="89" column="75" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/telegraf.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.Md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
