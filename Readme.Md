@@ -29,6 +29,11 @@ The Kafka binaries can be downloaded here
 
 <a href="https://kafka.apache.org/downloads" target="_blank">Kafka Binaries</a>
 
+The Blog on How Setting Up Kafka via SSL, Creating a Kafka Producer and Monitoring can be leveraged
+
+<a href="https://github.com/aivenkafka/EventStreamingApplication/tree/master/Blog" target="_blank">Building a Data Mesh With Aiven</a>
+
+
 
 B. Introduction to the Data Mesh
 
