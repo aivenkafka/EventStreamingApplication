@@ -63,6 +63,7 @@ A basic Kafka Producer with the Metadata Callback Method just for fun called "Ka
 
 # Consume data from Kafka with Telegraf.
 
+You can install the Telegraf CLI.
 <a href="https://github.com/influxdata/telegraf" target="_blank">Telegraf CLI</a>
 
 Telegraf is a Kafka Consumer that will read the data from Kafka and send it to the Influx DB.
