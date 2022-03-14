@@ -70,10 +70,19 @@ Tip #2: Note the setting with the Consumer Group. I called it "stock-bids-telegr
 
 ![Alt text](./images/telegraf_consumer.png?raw=true "Telegraf Consumer")
 
+# Kafka Streams & Kafka Connect
+
+Kafka Streams can transform the data. For this Demo, data will be transformed from JSON to Avro. The app is called "KafkaStreamsJsontoAvro"
+The avsc file will be generated in the "stocktrades.avsc" file to reference the data and transform to Avro. Data will be sent to the Avro Topic
+
+A Kafka Connector will then read from the Output topic and send the data to Opensearch (an alternative to Elasticsearch)
+
 
 # Monitoring and Observability
 
 Metrics of Kafka instances can be monitored in Grafana via InfluxDB. See the technical blog for details
+
+Note: I created a new Kafka Server and InfluxDB to showcase the demo in a step by step process.
 
 ![Alt text](./images/01_Kafka_Metrics.png?raw=true "Step 1: Enable the Integration")
 ![Alt text](./images/02_InfluxDB.png?raw=true "Step 2: Set Connectivity from InfluxDB to Grafana")
@@ -88,10 +97,7 @@ Another example can be found here too!
 ![Alt text](./images/KafkaMetrics.png?raw=true "Kafka Metrics Sample")
 
 
-
-
-
-# Optional: Modifying your Path
+#Optional #1: Modifying your Path
 To see the data via our CLI, please download the Kafka Binaries
 Place it in my path so I do can execute these commands everywhere in your CLI. This makes life easier!
 
@@ -103,5 +109,12 @@ kafka-console-consumer --topic stock-prices-topic-aiven-cloud-json --bootstrap-s
 
 Tip #1: By default the Consumer reads from latest. Just add --from-beginning if you want to process all messages
 Tip #2: You can also specify the group as well! Highly recommended. The Group ID overrides the default Consumer Setting
+
+
+#Optional #2: Monitoring CPU via InfluxDB
+
+Earlier in the tutorial, I showed how telegraf can act as our Kafka Consumer. That same "telefraf.conf" file can be used to send metrics from InfluxDB to Grafana
+<a href="https://aiven.io/blog/tig-stack-using-telegraf-influxdb-and-grafana-on-aiven" target="_blank">Tutorial by Francesco Tisiot</a>
+
 
 
