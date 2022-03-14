@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "d4306996-b63f-45dc-82e5-cd5c26f0970e",
+		"name": "Aiven Kafka Connect REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01_Get List of all of Our Connectors",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1apNj1rPnyCzH2Jp",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "avnadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://kafka-interview-prep-kjang1923-2d80.aivencloud.com:17178/connectors",
+					"protocol": "https",
+					"host": [
+						"kafka-interview-prep-kjang1923-2d80",
+						"aivencloud",
+						"com"
+					],
+					"port": "17178",
+					"path": [
+						"connectors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_Get Connector Configs",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1apNj1rPnyCzH2Jp",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "avnadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://kafka-interview-prep-kjang1923-2d80.aivencloud.com:17178/connectors/stock_prices.opensearch.sink/config",
+					"protocol": "https",
+					"host": [
+						"kafka-interview-prep-kjang1923-2d80",
+						"aivencloud",
+						"com"
+					],
+					"port": "17178",
+					"path": [
+						"connectors",
+						"stock_prices.opensearch.sink",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_Get Connect Status",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1apNj1rPnyCzH2Jp",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "avnadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://kafka-interview-prep-kjang1923-2d80.aivencloud.com:17178/connectors/stock_prices.opensearch.sink/status",
+					"protocol": "https",
+					"host": [
+						"kafka-interview-prep-kjang1923-2d80",
+						"aivencloud",
+						"com"
+					],
+					"port": "17178",
+					"path": [
+						"connectors",
+						"stock_prices.opensearch.sink",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04_Create a Kafka Connector",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1apNj1rPnyCzH2Jp",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "avnadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"stock_prices.opensearch.sinks.smt2\",\n    \"config\": {\n\t    \"connector.class\": \"io.aiven.kafka.connect.opensearch.OpensearchSinkConnector\",\n\t    \"topics\": \"stock-prices-topic-aiven-avro\",\n\t    \"transforms\": \"addSuffix\",\n\t    \"transforms.addSuffix.type\": \"org.apache.kafka.connect.transforms.RegexRouter\",\n\t    \"transforms.addSuffix.regex\": \"stock-prices-topic-aiven-avro*\",\n\t    \"transforms.addSuffix.replacement\": \"smt_stock_prices2\",\n\t\t\"value.converter\": \"io.confluent.connect.avro.AvroConverter\",\n\t    \"value.converter.basic.auth.credentials.source\": \"USER_INFO\",\n\t    \"value.converter.schema.registry.url\": \"https://kafka-interview-prep-kjang1923-2d80.aivencloud.com:17183\",\n\t    \"value.converter.schema.registry.basic.auth.user.info\": \"avnadmin:W7FQI6fd9XcXTNoE\",\n\t    \"connection.password\": \"IB8rVNHIPUzUykQi\",\n\t    \"tasks.max\": \"1\",\n\t    \"batch.size\": \"8\",\n\t    \"connection.username\": \"avnadmin\",\n\t    \"key.ignore\": \"true\",\n\t    \"key.converter.schemas.enable\": \"false\",\n\t    \"connection.url\": \"https://open-search-poc-kjang1923-2d80.aivencloud.com:17178\",\n\t    \"linger.ms\": \"-2\"\n\n    }\n}"
+				},
+				"url": {
+					"raw": "https://kafka-interview-prep-kjang1923-2d80.aivencloud.com:17178/connectors",
+					"protocol": "https",
+					"host": [
+						"kafka-interview-prep-kjang1923-2d80",
+						"aivencloud",
+						"com"
+					],
+					"port": "17178",
+					"path": [
+						"connectors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

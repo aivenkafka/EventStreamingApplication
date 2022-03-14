@@ -126,5 +126,7 @@ Tip #2: You can also specify the group as well! Highly recommended. The Group ID
 Earlier in the tutorial, I showed how telegraf can act as our Kafka Consumer. That same "telefraf.conf" file can be used to send metrics from InfluxDB to Grafana
 <a href="https://aiven.io/blog/tig-stack-using-telegraf-influxdb-and-grafana-on-aiven" target="_blank">Tutorial by Francesco Tisiot</a>
 
+#Optional 3: Check out the OpenSearch Kafka Connect Sink Postman Commands. Kafka Connectors can be created via the REST API or the Aiven Console.
+
 
 
