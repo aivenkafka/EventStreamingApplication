@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f07efdc-6664-4ec2-a27d-291a5973dcf0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/images/01_Kafka_Metrics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/02_InfluxDB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/03_Grafana.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/images/Consumer_Group_Grafana.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/images/telegraf_consumer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -40,8 +43,8 @@
       <file leaf-file-name="Readme.Md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme.Md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="1200">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -355,7 +358,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1671" y="82" width="1280" height="738" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -367,10 +369,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3294964" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3447738" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17160687" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17160687" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835218" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835218" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -740,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.Md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="1200">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>

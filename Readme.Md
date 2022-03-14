@@ -82,7 +82,7 @@ Metrics of Kafka instances can be monitored in Grafana via InfluxDB. See the tec
 An example of Monitoring is Consumer Groups. Since we had a telegraf Consumer send data to InfluxDB, we were able to
 process the data
 
-![Alt text](./images/telegraf_consumer.png?raw=true "Kafka Consumer Group Visual")
+![Alt text](./images/Consumer_Group_Grafana.png?raw=true "Kafka Consumer Group Visual")
 
 Another example can be found here too!
 ![Alt text](./images/KafkaMetrics.png?raw=true "Kafka Metrics Sample")
