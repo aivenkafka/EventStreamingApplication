@@ -1,6 +1,10 @@
 # Introduction
+The Data Mesh is the future. At the heart of the Data Mesh is Apache Kafka.
+Currently 70% of Fortune 500 Companies are utilizing Apache Kafka.
+While Kafka can be extremely powerful, the setup and orchestration can be complex and mind boggling.
+With Aiven, we take care of the infrastructure and maintenance for you so that way organizations can focus on software development.
 
-Hi! Welcome to my an application that will show how Aiven can assist your organization on how
+In this tutorial, we will show how Aiven can assist your organization on how
 to deploy your Data Mesh using Aiven as our Provider.
 
 In our Application today, we will create a random Datagen Producer that will send a list
