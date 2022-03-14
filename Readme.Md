@@ -28,7 +28,7 @@ The Kafka binaries can be downloaded here
 
 B. Introduction to the Data Mesh
 
-<a href="https://developer.confluent.io/learn-kafka/data-mesh/intro/" target="_blank">What is a Data Mesh</a>
+<a href="https://www.montecarlodata.com/data-mesh-101-everything-you-need-to-know-to-get-started/" target="_blank">What is a Data Mesh</a>
 
 # Technologies used in this Demo
 
@@ -40,6 +40,10 @@ E. Kafka Streams and the Aiven Schema Registry <br />
 F. Kafka Connect <br />
 G. OpenSearch (Elasticsearch Alternative) <br />
 
+C. Installing the Aiven CLI
+
+<a href="https://developer.aiven.io/docs/tools/cli" target="_blank">Aiven CLI</a>
+
 
 # First and foremost, we will create our Kafka producer.
 
@@ -47,6 +51,20 @@ The Kafka Producer is called "KafkaProducerApplication". This shows code Produce
 key and the values will show a bid of a stock price, time of trade and the stock symbol name.
 
 A basic Kafka Producer with the Metadata Callback Method just for fun called "KafkaProducer"
+
+# Consume data from Kafka with Telegraf
+
+Telegraf is a Kafka Consumer that will read the data from Kafka and send it to the Influx DB.
+
+telegraf -config ./src/main/resources/telegraf.conf
+
+Tip: Change the settings in Telegraf to account for your Kafka Server Host Name and the Authentication Settings.
+
+# Monitoring and Observability
+
+Metrics of Kafka instances can be monitored in Grafana via InfluxDB. See the technical blog for details
+
+![Alt text](./images/KafkaMetrics.png?raw=true "Kafka Metrics Sample")
 
 
 # Optional: Modifying your Path
@@ -61,20 +79,5 @@ kafka-console-consumer --topic stock-prices-topic-aiven-cloud-json --bootstrap-s
 
 Tip #1: By default the Consumer reads from latest. Just add --from-beginning if you want to process all messages
 Tip #2: You can also specify the group as well! Highly recommended. The Group ID overrides the default Consumer Setting
-
-
-# Consume data from Kafka with Telegraf
-
-Telegraf is a Kafka Consumer that will read the data from Kafka and send it to the Influx DB.
-
-telegraf -config ./src/main/resources/telegraf.conf
-
-# Monitoring and Observability
-
-Metrics of Kafka instances can be monitored in Grafana via InfluxDB. See the technical blog for details
-
-![Alt text](./images/KafkaMetrics.png?raw=true "Kafka Metrics Sample")
-
-
 
 

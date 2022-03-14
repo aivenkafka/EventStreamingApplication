@@ -36,11 +36,11 @@ public class KafkaProducerApplication {
             logger.info("Error reading the ssl info");
 
         }
-        //Build the Kafka Producer off of the Properties as seen in the "client-ssl.properties" seen in lines 26-38
+        //Build the Kafka Producer off of the Properties as seen in the "client.properties" seen in lines 26-38
         org.apache.kafka.clients.producer.KafkaProducer<String, String> producer
                 = new org.apache.kafka.clients.producer.KafkaProducer<String, String>(config);
 
-        //Our producer will continuously run.
+        //Our producer will continuously run. Nothing will stop it :)
         while(true) {
             //The function called newStockPrice is our Producer Record. For people new to Java, I created the Producer Record seen in lines
             //59 through 89. There is a way that the code can be defined without functions. See "KafkaProducer" as an example.
@@ -55,7 +55,7 @@ public class KafkaProducerApplication {
         producer.close();
     }
 
-
+    //This is a Function that will generate a Producer Record. This gets invoked on line 48.
     public static ProducerRecord<String, String> newStockPrice(String key) {
             // create a producer record Lets create a JSON message
             ObjectNode stockInformation = JsonNodeFactory.instance.objectNode();
@@ -63,16 +63,12 @@ public class KafkaProducerApplication {
             //Traded Amount each day
             Integer traded_amount = ThreadLocalRandom.current().nextInt(0, 3000);
 
-            //Range of FB Stock
-
-
-
             //Time of the Trade
             Instant now = Instant.now();
             //Generate a UUID
             UUID uuid = UUID.randomUUID();
 
-            //Transform the uuid into a string and concanate it into a random JSON
+            //Transform the uuid into a string and concanate it into a random JSON.
             String uuidJson = "{\"key\"" + ":" + " \"" + uuid.toString() + "\" }";
 
             //Random Ticker Function to enable to randomness in the asking price, stockTickerSymbol and time
@@ -80,6 +76,8 @@ public class KafkaProducerApplication {
 
             //FANG Stock Symbol Names
             String[] stockSymbol = {"FB", "AAPL", "NFLX", "AAPL", "GOOGL"};
+
+            //A new Producer Record is consistently being built and generated from here.
 
             while(true) {
                     int stockTickerSymbol = randomTicker.nextInt(stockSymbol.length);
